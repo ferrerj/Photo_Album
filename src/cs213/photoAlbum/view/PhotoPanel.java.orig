@@ -1,0 +1,226 @@
+package cs213.photoAlbum.view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics2D;
+import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.RenderingHints;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+
+import javax.swing.BorderFactory;
+import javax.swing.DefaultListModel;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.ListSelectionModel;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.SwingConstants;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+import cs213.photoAlbum.control.Controller;
+import cs213.photoAlbum.model.Albums;
+
+public class PhotoPanel extends JPanel implements ActionListener, ListSelectionListener {
+	Controller control;
+	private DefaultListModel<ImageIcon> listModel;
+	private JList<ImageIcon> photo_list;
+	private JButton add_photo,delete_photo,back,recaption_photo,open_photo;
+	private JLabel num_photos,oldest_date,date_range;
+	private JTextField range_info,num_info,oldest_info;
+	GridLayout Buttons = new GridLayout(5,1);
+	GridLayout List = new GridLayout(0,1);
+	GridLayout Info = new GridLayout(2,3);
+	ImageIcon icon;
+	ImageIcon icon2;
+	ImageIcon icon3;
+	String album;
+	String[] photos;
+	tester padre;
+	public PhotoPanel(Controller control, String album, tester parent)
+	{
+		padre = parent;
+		this.album = album;
+		this.control=control;
+		System.out.println(album);
+		JPanel total = new JPanel(new BorderLayout());
+		JPanel buttons = new JPanel();
+		JPanel albums = new JPanel();
+		JPanel info = new JPanel();
+		//set any gaps i want
+		Buttons.setVgap(10);
+		//Info.setHgap(20);
+		albums.setLayout(List);   //load up layouts in the panels
+		buttons.setLayout(Buttons);
+		info.setLayout(Info);
+		//add stuff to the list
+		//initilize icon
+//		icon = new ImageIcon("photos\\computer-guy.png","test time");
+//		Image scaleImage = icon.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+//		JLabel j1 = new JLabel("Caption",icon,JLabel.CENTER);
+//		//icon2 = new ImageIcon("photos\\victory.jpg");
+		listModel = new DefaultListModel<ImageIcon>();
+//		icon.setImage(scaleImage);
+//		scaleImage = icon.getImage().getScaledInstance(400, 400, Image.SCALE_DEFAULT);
+//		listModel.addElement(icon);
+//		scaleImage = icon2.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+//		icon2.setImage(scaleImage);
+//		icon3 = new ImageIcon("photos\\aceit.jpg");
+//		//TODO attempt to add hovertext to an icon
+//		icon3.setDescription("Computer dude guy");
+//		icon3.getDescription();
+//		//scale the image
+//		scaleImage = icon3.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+//		icon3.setImage(scaleImage);
+//		listModel.addElement(icon2);
+//		listModel.addElement(icon3);
+		//photo list junk
+		photo_list = new JList<ImageIcon>(listModel);
+		photo_list.setLayoutOrientation(JList.HORIZONTAL_WRAP); //lists items 
+		photo_list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); //only one thing at a time
+		photo_list.setSelectedIndex(0);
+		photo_list.setVisibleRowCount(3);
+		populatePhotos();
+		//photo listener
+		photo_list.addListSelectionListener(this);
+		//put a scroll pane all up in
+		JScrollPane albumscroller = new JScrollPane(photo_list,ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		albumscroller.setPreferredSize(new Dimension(400,400));
+		//Initialize buttons
+		add_photo = new JButton("Add Photo");
+		add_photo.setPreferredSize(new Dimension(80,20));
+		delete_photo = new JButton("Delete Photo");
+		delete_photo.setPreferredSize(new Dimension(80,20));
+		back = new JButton("Back");
+		back.setPreferredSize(new Dimension(80,20));
+		recaption_photo = new JButton("Recaption Photo");
+		open_photo = new JButton("Display Photo");
+		//add buttons
+		buttons.add(add_photo);
+		buttons.add(delete_photo);
+		buttons.add(recaption_photo);
+		buttons.add(open_photo);
+		buttons.add(back);
+		//add listeners for buttons
+		add_photo.addActionListener(this);
+		delete_photo.addActionListener(this);
+		recaption_photo.addActionListener(this);
+		open_photo.addActionListener(this);
+		back.addActionListener(this);
+		add_photo.setActionCommand("add");
+		delete_photo.setActionCommand("delete");
+		recaption_photo.setActionCommand("recaption");
+		open_photo.setActionCommand("open");
+		back.setActionCommand("back");
+		//add list
+		albums.add(albumscroller);
+		//TODO Set up a caption when highlighted
+		
+		//set borders and spacing of the panels
+		buttons.setBorder(BorderFactory.createEmptyBorder(5, 10 ,10, 10));
+		//add everything to total
+		total.add(buttons,BorderLayout.WEST);
+		total.add(albums);
+		add(total);
+		total.setBorder(BorderFactory.createRaisedSoftBevelBorder());  
+		total.setBorder(BorderFactory.createTitledBorder(album));
+		//TODO Add listeners for all the buttons.
+	}
+	@Override
+	public void valueChanged(ListSelectionEvent e) {
+			//photo_list.getSelectedValue().getDescription();
+		
+	}
+	private void populatePhotos()
+	{
+		listModel.clear();
+		photos = control.listPhotos(album.toString());
+		ImageIcon current;
+		String current_name;
+		Image scaleImage;
+		for(int i =0;i<photos.length;i++)
+		{
+			current_name = control.getPhoto(album, photos[i]).getName();
+			current= new ImageIcon(current_name,current_name); //gives the path
+			scaleImage = current.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
+			current.setImage(scaleImage);
+		listModel.addElement(current);
+		}
+		
+		photo_list.setSelectedIndex(0);
+	}
+	@Override
+	//TODO Change the Action Commands
+	public void actionPerformed(ActionEvent e) {
+		PopUp popup;
+		if("add".equals(e.getActionCommand()))
+		{
+			System.out.println("Add Photo");
+			JFileChooser chooser = new JFileChooser();
+		    FileNameExtensionFilter filter = new FileNameExtensionFilter(
+		        "JPG & GIF Images", "jpg", "gif");
+		    chooser.setFileFilter(filter);
+		    if(chooser.showOpenDialog(this)==JFileChooser.APPROVE_OPTION)
+		    {
+		    	System.out.println(chooser.getSelectedFile().getAbsolutePath());
+				String caption = JOptionPane.showInputDialog("Caption Please:");
+		    	System.out.println(caption);
+		    	control.addPhoto(chooser.getSelectedFile().getAbsolutePath(),caption, album.toString());
+		    	populatePhotos();	
+		    }
+		    
+		}
+		else if("delete".equals(e.getActionCommand()))
+		{
+			System.out.println("Delete Photo");
+			try {
+				popup = new PopUp(3,2);
+				if(popup.response==0)
+				{
+					control.deletePhoto(album,photo_list.getSelectedValue().getDescription());
+				}
+			} catch (ClassNotFoundException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			populatePhotos();
+		}
+		else if("recaption".equals(e.getActionCommand()))
+		{
+			System.out.println("Recaption");
+			popup = new PopUp(2,control.getPhoto(album, photo_list.getSelectedValue().getDescription()).getCaption(), null);
+			if(popup.text!=null&&popup.text.length()>0)
+			{
+			control.getPhoto(album, photo_list.getSelectedValue().getDescription()).changeCaption(popup.text);
+			}
+			
+		}
+		else if("open".equals(e.getActionCommand()))
+		{
+			System.out.println("Open Photo");
+			padre.loadPhoto(album, photo_list.getSelectedValue().getDescription());
+		}
+		else
+		{
+			System.out.println("Back");
+			padre.loadAlbum();
+		}
+		
+	}
+}

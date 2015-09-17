@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.5" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <package id="1" language="java" name="cs213.photoAlbum.view" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="677" width="1361" x="-20" y="40"/>    
+    <display autosize="false" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="2" language="java" name="cs213.photoAlbum.view.AdminView" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/AdminView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="123" y="249"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="cs213.photoAlbum.view.AlbumPanel" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/AlbumPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="339" y="363"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="cs213.photoAlbum.view.PhotoPanel" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/PhotoPanel.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="564" y="300"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="cs213.photoAlbum.view.PhotoView" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/PhotoView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="804" y="360"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="cs213.photoAlbum.view.PopUp" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/PopUp.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1005" y="218"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="cs213.photoAlbum.view.SlideShow" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/SlideShow.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1203" y="254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="cs213.photoAlbum.view.tagSearchResults" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/tagSearchResults.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1411" y="364"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="cs213.photoAlbum.view.tester" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/view/tester.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1015" y="561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="10" language="java" name="cs213.photoAlbum.model" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/model" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="430" width="1012" x="185" y="1266"/>    
+    <display autosize="false" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="11" language="java" name="cs213.photoAlbum.model.Albums" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/model/Albums.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="712" y="1504"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="cs213.photoAlbum.model.Backend" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/model/Backend.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="299" y="1477"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="cs213.photoAlbum.model.Photos" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/model/Photos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="908" y="1501"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="cs213.photoAlbum.model.Tags" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/model/Tags.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1095" y="1448"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="cs213.photoAlbum.model.User" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/model/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="495" y="1469"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="16" language="java" name="cs213.photoAlbum.control" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/control" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="508" width="995" x="272" y="735"/>    
+    <display autosize="false" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="17" language="java" name="cs213.photoAlbum.control.Controller" project="photoalbum39" 
+    file="/photoalbum39/src/cs213/photoAlbum/control/Controller.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="517" y="991"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="18">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="19" name="control"/>      
+      <multiplicity id="20" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="21">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="22" name="control"/>      
+      <multiplicity id="23" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="24">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="25" name="photo_list"/>      
+      <multiplicity id="26" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="28" name="tag_list"/>      
+      <multiplicity id="29" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="31" name="test"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="34" name="padre"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="37" name="backend"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="39">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="40" name="albums"/>      
+      <multiplicity id="41" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="42">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="43" name="users"/>      
+      <multiplicity id="44" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="45">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="46" name="control"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="48">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="49" name="control"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="52" name="control"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="54">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="55" name="control"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="57">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="58" name="padre"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="60">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="61" name="control"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="63">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="64" name="other"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="66">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="67" name="curr_photo"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="69">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="70" name="padre"/>      
+      <multiplicity id="71" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="72">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="73" name="photo"/>      
+      <multiplicity id="74" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="75">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="76" name="album"/>      
+      <multiplicity id="77" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="78">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="79" name="padre"/>      
+      <multiplicity id="80" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="81">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="82" name="curr_photo"/>      
+      <multiplicity id="83" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="84">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="85" name="padre"/>      
+      <multiplicity id="86" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="88" name="pic"/>      
+      <multiplicity id="89" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="91" name="padre"/>      
+      <multiplicity id="92" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="94" name="currentUser"/>      
+      <multiplicity id="95" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="96">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="97" name="admin"/>      
+      <multiplicity id="98" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
